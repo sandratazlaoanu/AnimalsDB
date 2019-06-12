@@ -24,7 +24,6 @@ public class MenuClass {
 			System.out.println("4. Delete.");
 			System.out.println("5. Order by birthdate.(Asc)");
 
-
 			int option = Integer.parseInt(reader.readLine());
 			switch (option) {
 
@@ -73,13 +72,13 @@ public class MenuClass {
 					String nameCat = reader.readLine();
 					System.out.println("Gender: ");
 					String genderCat = reader.readLine();
-					System.out.println("Data: ");
+					System.out.println("Date: ");
 
-					System.out.println("An: ");
+					System.out.println("Year: ");
 					int year = Integer.parseInt(reader.readLine());
-					System.out.println("Luna: ");
+					System.out.println("Month: ");
 					int month = Integer.parseInt(reader.readLine());
-					System.out.println("Zi: ");
+					System.out.println("Day: ");
 					int day = Integer.parseInt(reader.readLine());
 
 					@SuppressWarnings("deprecation")
@@ -93,13 +92,13 @@ public class MenuClass {
 					String nameDog = reader.readLine();
 					System.out.println("Gender: ");
 					String genderDog = reader.readLine();
-					System.out.println("Data: ");
+					System.out.println("Date: ");
 
-					System.out.println("An: ");
+					System.out.println("Year: ");
 					int yearDog = Integer.parseInt(reader.readLine());
-					System.out.println("Luna: ");
+					System.out.println("Month: ");
 					int monthDog = Integer.parseInt(reader.readLine());
-					System.out.println("Zi: ");
+					System.out.println("Day: ");
 					int dayDog = Integer.parseInt(reader.readLine());
 
 					@SuppressWarnings("deprecation")
@@ -113,13 +112,13 @@ public class MenuClass {
 					String nameParrot = reader.readLine();
 					System.out.println("Gender: ");
 					String genderParrot = reader.readLine();
-					System.out.println("Data: ");
+					System.out.println("Date: ");
 
-					System.out.println("An: ");
+					System.out.println("Year: ");
 					int yearParrot = Integer.parseInt(reader.readLine());
-					System.out.println("Luna: ");
+					System.out.println("Month: ");
 					int monthParrot = Integer.parseInt(reader.readLine());
-					System.out.println("Zi: ");
+					System.out.println("Day: ");
 					int dayParrot = Integer.parseInt(reader.readLine());
 
 					@SuppressWarnings("deprecation")
@@ -147,13 +146,13 @@ public class MenuClass {
 					String nameCat = reader.readLine();
 					System.out.println("Gender: ");
 					String genderCat = reader.readLine();
-					System.out.println("Data: ");
+					System.out.println("Date: ");
 
-					System.out.println("An: ");
+					System.out.println("Year: ");
 					int year = Integer.parseInt(reader.readLine());
-					System.out.println("Luna: ");
+					System.out.println("Month: ");
 					int month = Integer.parseInt(reader.readLine());
-					System.out.println("Zi: ");
+					System.out.println("Day: ");
 					int day = Integer.parseInt(reader.readLine());
 
 					@SuppressWarnings("deprecation")
@@ -167,13 +166,13 @@ public class MenuClass {
 					String nameDog = reader.readLine();
 					System.out.println("Gender: ");
 					String genderDog = reader.readLine();
-					System.out.println("Data: ");
+					System.out.println("Date: ");
 
-					System.out.println("An: ");
+					System.out.println("Year: ");
 					int yearDog = Integer.parseInt(reader.readLine());
-					System.out.println("Luna: ");
+					System.out.println("Month: ");
 					int monthDog = Integer.parseInt(reader.readLine());
-					System.out.println("Zi: ");
+					System.out.println("Day: ");
 					int dayDog = Integer.parseInt(reader.readLine());
 
 					@SuppressWarnings("deprecation")
@@ -187,13 +186,13 @@ public class MenuClass {
 					String nameParrot = reader.readLine();
 					System.out.println("Gender: ");
 					String genderParrot = reader.readLine();
-					System.out.println("Data: ");
+					System.out.println("Date: ");
 
-					System.out.println("An: ");
+					System.out.println("Year: ");
 					int yearParrot = Integer.parseInt(reader.readLine());
-					System.out.println("Luna: ");
+					System.out.println("Month: ");
 					int monthParrot = Integer.parseInt(reader.readLine());
-					System.out.println("Zi: ");
+					System.out.println("Day: ");
 					int dayParrot = Integer.parseInt(reader.readLine());
 
 					@SuppressWarnings("deprecation")
@@ -215,19 +214,16 @@ public class MenuClass {
 				case 0:
 					break;
 				case 1:
-					System.out.println("Datele: ");
 					System.out.println("Id: ");
 					int catToDelete = Integer.parseInt(reader.readLine());
 					controller.deleteCat(catToDelete);
 					break;
 				case 2:
-					System.out.println("Datele: ");
 					System.out.println("Id: ");
 					int dogToDelete = Integer.parseInt(reader.readLine());
 					controller.deleteDog(dogToDelete);
 					break;
 				case 3:
-					System.out.println("Datele: ");
 					System.out.println("Id: ");
 					int parrotToDelete = Integer.parseInt(reader.readLine());
 					controller.deleteParrot(parrotToDelete);
