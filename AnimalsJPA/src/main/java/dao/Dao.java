@@ -15,4 +15,8 @@ public interface Dao<T> {
 	boolean delete(T t);
 	
 	T findById(int id);
+	
+	void sortByBirthdate();
+	
+	void sortByBirthdateDesc();
 }

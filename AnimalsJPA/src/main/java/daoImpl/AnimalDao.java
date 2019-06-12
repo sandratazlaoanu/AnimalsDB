@@ -10,9 +10,9 @@ import helper.DatabaseHelper;
 import model.Animal;
 
 public class AnimalDao implements Dao<Animal> {
-	
+
 	private DatabaseHelper databaseHelper;
-	
+
 	public AnimalDao(DatabaseHelper databaseHelper) {
 		this.databaseHelper = databaseHelper;
 	}
@@ -50,11 +50,30 @@ public class AnimalDao implements Dao<Animal> {
 
 	@Override
 	public Animal findById(int id) {
-		
+
 		Animal toFind = databaseHelper.getEntityManager().find(Animal.class, id);
-		
+
 		return toFind;
 	}
+
+	@Override
+	public void sortByBirthdate() {
+		List<Animal> results = databaseHelper.getEntityManager()
+				.createNativeQuery("Select * from Animal order by birthdate", Animal.class)
+				.getResultList();
+		for (Animal a : results) {
+			System.out.println(a);
+		}
+	}
 	
+	@Override
+	public void sortByBirthdateDesc() {
+		List<Animal> results = databaseHelper.getEntityManager()
+				.createNativeQuery("Select * from Animal order by birthdate DESC", Animal.class)
+				.getResultList();
+		for (Animal a : results) {
+			System.out.println(a);
+		}
+	}
 
 }

@@ -22,7 +22,8 @@ public class MenuClass {
 			System.out.println("2. Add.");
 			System.out.println("3. Update.");
 			System.out.println("4. Delete.");
-			System.out.println("5. Order by birthdate.");
+			System.out.println("5. Order by birthdate.(Asc)");
+
 
 			int option = Integer.parseInt(reader.readLine());
 			switch (option) {
@@ -233,8 +234,55 @@ public class MenuClass {
 					break;
 				}
 				break;
+
+			case 5:
+				System.out.println("---Options---\n");
+				System.out.println("1.Sorted cats");
+				System.out.println("2.Sorted dogs.");
+				System.out.println("3.Sorted parrots.");
+
+				int optSort = Integer.parseInt(reader.readLine());
+				switch (optSort) {
+
+				case 0:
+					break;
+				case 1:
+					controller.sortCatList();
+					break;
+				case 2:
+					controller.sortDogList();
+					break;
+				case 3:
+					controller.sortParrotList();
+					break;
+
+				}
+				break;
+			case 6:
+				System.out.println("---Options---\n");
+				System.out.println("1.Sorted cats");
+				System.out.println("2.Sorted dogs.");
+				System.out.println("3.Sorted parrots.");
+
+				int optSortDesc = Integer.parseInt(reader.readLine());
+				switch (optSortDesc) {
+
+				case 0:
+					break;
+				case 1:
+					controller.sortCatList();
+					break;
+				case 2:
+					controller.sortDogList();
+					break;
+				case 3:
+					controller.sortParrotList();
+					break;
+
+				}
+				break;
 			}
 		}
-
 	}
+
 }
